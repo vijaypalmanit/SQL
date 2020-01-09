@@ -54,10 +54,10 @@ id  name    salary  Value   abc
 +----+--------+
 
 Solution:
-If you want to keep the row with the lowest id value:
+--If you want to keep the row with the lowest id value:
 
 DELETE n1 FROM names n1, names n2 WHERE n1.id > n2.id AND n1.name = n2.name
 
-If you want to keep the row with the highest id value:
+--If you want to keep the row with the highest id value:
 
 DELETE n1 FROM names n1, names n2 WHERE n1.id < n2.id AND n1.name = n2.name
